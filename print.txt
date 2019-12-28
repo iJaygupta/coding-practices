@@ -1,0 +1,20 @@
+package doctore;
+import java.applet.Applet;
+import java.awt.Graphics;
+import javax.print.*;
+  public class Print extends Applet
+ { public void paint(Graphics g)
+  { String defPrinter;
+PrintService[] printService = PrintServiceLookup.lookupPrintServices(null, null);
+
+        System.out.println("List of Installed Printers- ");
+        for (int i = 0; i< printService.length; i++) {
+            String printerName = printService[i].getName();
+            g.drawString(printerName,10+10*i,50+10*i);
+        }defPrinter = PrintServiceLookup.lookupDefaultPrintService().getName();
+        g.drawString(defPrinter,100,200);  
+    }
+}
+    
+
+  

@@ -1,0 +1,11 @@
+@WebServlet("/Login")
+public class Logincheck extends HttpServlet
+{protected void doGet(HttpServletRequest request,HttpServletResponse response)
+ { String str1=request.getParameter("name");
+   String str2=request.getParameter("pass");
+   if(str1.equals("admin")&&str2.equals("1234"))
+ { response.sendRedirect("Welcome.jsp");
+ }
+   else
+ { response.sendRedirect("Error.jsp");
+ }

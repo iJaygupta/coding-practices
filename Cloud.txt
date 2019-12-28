@@ -1,0 +1,12 @@
+import java.util.Scanner;
+ public class Cloud
+{ public static void main(String args[])
+ {  Scanner sc=new Scanner(System.in);
+    StringBuffer sb=new StringBuffer();
+    System.out.println("Enter a Sentence");
+    sb.append(sc.nextLine());
+    String words[]=sb.split(' ');
+    System.out.println(words.toString());
+  }
+}
+    

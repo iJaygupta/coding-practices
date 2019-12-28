@@ -1,0 +1,10 @@
+Operating Systems : Threads and Processes, Thread 
+synchronization primitives ( semaphores and mutex ), 
+ Memory management ( Paging, Swapping )
+Databases : Querying a Relational DBMS, Indexing,
+ Primary and Foreign Key constraints,
+ Normalisation, Internal storage
+Networks : Network Layers, TCP and UDP, TCP packet
+ structure, Packet routing,  Subnetting
+Web : Cookies, Session management, Caching, Http / 
+Https    

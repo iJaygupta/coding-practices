@@ -1,0 +1,63 @@
+<html>
+<head>
+<script type="text/javascript">
+function validateform()
+{ var n=document.MyForm.NAME.value;
+  var p=document.MyForm.PASS.value;
+  car c=document.MyForm.CONTACT.value;
+  if(n==null||n=" ")
+{ alert("Name must be filled out");
+  document.MyForm.NAME.focus();
+  document.MyForm.NAME.style.background="green";
+  return false;
+}
+
+}
+</script>
+<title>Registration Form</title>
+</head>
+<body bgcolor="pink">
+<form name="MyForm" action="abc.jsp" onsubmit="return validateform()" method="post">
+<table align="center" width="60%" cellpadding="2" cellspacing="2" border="0">
+<caption><h2>Student Registration Form</h2></caption>
+<tr>
+<td>Name</td>
+<td><input type="text" name="NAME"></td>
+</tr>
+<tr>
+<td>Contact</td>
+<td><input type="text" name="CONTACT" value="+91"></td>
+</tr>
+<tr>
+<td>Password</td>
+<td><input type="password" name="PASS" value="***"></td>
+</tr>
+<tr>
+<td>Type</td>
+<td><input type="radio" name="TYPE">Attending</td>
+<td><input type="radio" name="TYPE"> Non Attending</td>
+</tr>
+<tr>
+<td>Document Submitted</td>
+<td><input type="checkbox" name="doc">HighSchool MarkSheet</td>
+<td><input type="checkbox" name="doc">Intermediate MarkSheet</td>
+</tr>
+<tr>
+<td>Course</td>
+<td>
+<select name="course">
+<option>BE/BTech
+<option>BCA
+<option>BBA
+<option>BCom
+<option>BA
+<option>BFA
+</td>
+<tr><td></td>
+<td><input type="submit" value="submit"></td>
+<td><input type="reset" value="reset"></td>
+</tr>
+</table>
+</form>
+</body>
+</html>

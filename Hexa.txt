@@ -1,0 +1,17 @@
+import java.util.Scanner;
+public class Hexa
+{  public static void main(String args[])
+  {  Scanner sc=new Scanner(System.in);
+     System.out.println("Enter a number");
+     int num=sc.nextInt();
+     
+     while(a<=num)
+    {  if(a==num)
+       {  System.out.println("Number is power of two");
+          System.exit(0);
+        }
+       a=a*2; 
+    }
+    System.out.println("Number is not power of two");
+}
+}
